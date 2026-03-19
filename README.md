@@ -2,6 +2,14 @@
 
 This project is a simple webpage dedicated to all things Trimble 0-60 on GitHub.
 
+## Call for Applications
+
+Applications for the Trimble 0-60 Challenge are now open.
+
+Visit the official Trimble page for full details, eligibility, deadlines, and program information:
+
+[Trimble 0-60 Challenge](https://www.trimble.com/en/our-company/events/dimensions/experiences/0-60-challenge)
+
 ## Purpose
 
 The site acts as a small landing page for the Trimble 0-60 project and links back to the GitHub repository.
