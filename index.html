@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trimble 0-60</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --bg: #f3efe7;
+      --card: rgba(255, 250, 242, 0.88);
+      --text: #1f2933;
+      --accent: #c2410c;
+      --accent-soft: #fb923c;
+      --line: rgba(31, 41, 51, 0.08);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      background:
+        radial-gradient(circle at top, rgba(194, 65, 12, 0.16), transparent 32%),
+        linear-gradient(135deg, var(--bg), #fff7ed 55%, #fde7cf);
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--text);
+      padding: 24px;
+    }
+
+    main {
+      width: min(90vw, 640px);
+      padding: 3rem;
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      background: var(--card);
+      backdrop-filter: blur(10px);
+      box-shadow: 0 24px 60px rgba(31, 41, 51, 0.12);
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 1rem;
+      font-size: clamp(2.5rem, 8vw, 4.5rem);
+      line-height: 0.95;
+      letter-spacing: -0.04em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .eyebrow {
+      margin-bottom: 1rem;
+      font-size: 0.85rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    .accent {
+      color: var(--accent);
+    }
+
+    .actions {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 0.9rem 1.3rem;
+      border-radius: 999px;
+      text-decoration: none;
+      font-size: 0.95rem;
+      border: 1px solid var(--line);
+      color: var(--text);
+      background: white;
+    }
+
+    .button.primary {
+      color: white;
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="eyebrow">GitHub Project</div>
+    <h1>All Things <span class="accent">Trimble 0-60</span></h1>
+    <p>This page is dedicated to the Trimble 0-60 project on GitHub, with a simple front door for the repository and project notes.</p>
+    <div class="actions">
+      <a class="button primary" href="https://github.com/germanaparicio-spec/Trimble060" target="_blank" rel="noreferrer">View Repo</a>
+      <a class="button" href="https://www.trimble.com/en/our-company/events/dimensions/experiences/0-60-challenge" target="_blank" rel="noreferrer">Official 0-60 Info</a>
+      <a class="button" href="README.md">Read the README</a>
+    </div>
+  </main>
+</body>
+</html>
